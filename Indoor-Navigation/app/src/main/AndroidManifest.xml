@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.indoor_navigation" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.NavActivity">
+
+        </activity>
+
+        <activity android:name=".Activity.FloorlistActivity">
+        </activity>
+
+        <activity android:name=".Activity.PointlistActivity">
+        </activity>
+
+        <activity
+            android:name=".Activity.MapActivity"
+            >
+        </activity>
+
+        <activity android:name=".Activity.BrowserActivity">
+
+        </activity>
+    </application>
+
+</manifest>
